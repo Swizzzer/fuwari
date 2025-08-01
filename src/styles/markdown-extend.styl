@@ -243,3 +243,18 @@ a.card-github.fetch-error
   transition-property: all
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   transition-duration: 0.15s
+
+// 黑幕功能样式
+.spoiler
+  background-color: var(--tw-prose-body)
+  color: transparent
+  border-radius: 0.25rem
+  padding: 0.1rem 0.2rem
+  cursor: pointer
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1)
+  user-select: none
+  
+  &:hover
+    color: var(--tw-prose-body)
+    background-color: var(--btn-regular-bg-hover)
+    user-select: text
